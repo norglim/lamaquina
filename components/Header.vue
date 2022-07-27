@@ -1,11 +1,11 @@
 <template>
-    <header class="container">
-        <a href="/"><h1><strong>La máquina de los recuerdos</strong></h1></a>
-        <div class="links">
-            <NuxtLink to="/manifiesto">manifiesto</NuxtLink>
-            <a href="mailto:hola@lamaquina.xyz">hola@lamaquina.xyz</a>
-        </div>
-    </header>
+        <header class="container">
+            <a href="/"><h1><strong>La máquina de los recuerdos</strong></h1></a>
+            <div class="links">
+                <NuxtLink to="/manifiesto">manifiesto</NuxtLink>
+                <a href="mailto:hola@lamaquina.xyz">hola@lamaquina.xyz</a>
+            </div>
+        </header>
 </template>
 
 <style lang="css" scoped>

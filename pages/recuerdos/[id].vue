@@ -1,9 +1,11 @@
 <template>
-  <Header/>
-  <section class="container">
-    <h2>{{memory.title}}</h2>
-    <div v-html="html"></div>
-  </section>
+  <div>
+    <Header/>
+    <section class="container">
+      <h2>{{memory.title}}</h2>
+      <div v-html="html"></div>
+    </section>
+  </div>
 </template>
 
 <script setup>
@@ -20,7 +22,6 @@ db.version(1).stores({
 })
 const memory = await db.memories.get({id})
 if(memory == undefined) useRouter().push('/404')
-
 
 var converter = new showdown.Converter(),
     text      = memory.content,

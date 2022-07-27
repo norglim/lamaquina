@@ -1,6 +1,8 @@
 <template>
     <div>
         <Header/>
-        <MemoriesList/>
+        <div class="container">
+            <MemoriesList/>
+        </div>
     </div>
 </template>

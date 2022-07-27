@@ -1,18 +1,18 @@
 <template>
-    <div class="container">
-        <NuxtLink :to="`/recuerdos/${memory.id}`" v-for="(memory, index) in getMemories" :key="index">
+    <TransitionGroup>
+        <NuxtLink :to="`/recuerdos/${memory.id}`" v-for="memory in useMemoriesStore().getMemories" :key="memory.id">
             <p>{{memory.title}}</p>
         </NuxtLink>
-    </div>
+    </TransitionGroup>
 </template>
 
 <script setup>
 import {useMemoriesStore} from "~/store/memories"
 import Dexie from 'dexie'
-const db = new Dexie('memoriesCollection')
 
+const db = new Dexie('memoriesCollection')
 await useMemoriesStore().processMemory(db)
-const {getMemories} = useMemoriesStore()
+
 </script>
 
 <style scoped>
