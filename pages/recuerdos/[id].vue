@@ -1,9 +1,9 @@
 <template>
   <div>
     <Header/>
-    <section class="container">
+    <section class="content-container">
       <h2>{{memory.title}}</h2>
-      <div v-html="html"></div>
+      <div v-html="html" class="content"></div>
     </section>
   </div>
 </template>
@@ -27,3 +27,28 @@ var converter = new showdown.Converter(),
     text      = memory.content,
     html      = converter.makeHtml(text);
 </script>
+
+<style>
+  .content-container {
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .content-container h2 {
+    font-size: 24pt;
+    margin-bottom: 10px;
+  }
+  .content-container p {
+    font-size: 16pt;
+    line-height: 1.5;
+  }
+  @media screen and (max-width: 920px) {
+    .content-container {
+      padding: 20px 40px;
+    }
+    .content-container p {
+      font-size: 14pt;
+    }
+  }
+</style>

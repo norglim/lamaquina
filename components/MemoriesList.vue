@@ -1,8 +1,11 @@
 <template>
     <TransitionGroup>
-        <NuxtLink :to="`/recuerdos/${memory.id}`" v-for="memory in useMemoriesStore().getMemories" :key="memory.id">
-            <p>{{memory.title}}</p>
-        </NuxtLink>
+        <h2>Recuerdos:</h2>
+        <ul>
+            <NuxtLink  :to="`/recuerdos/${memory.id}`" v-for="memory in useMemoriesStore().getMemories" :key="memory.id">
+            <li class="memory-title">{{memory.title}}</li>
+            </NuxtLink>
+        </ul>
     </TransitionGroup>
 </template>
 
@@ -16,7 +19,20 @@ await useMemoriesStore().processMemory(db)
 </script>
 
 <style scoped>
-a {
-    margin: 0 80px;
+h2 {
+    font-size: 18pt;
+    margin-bottom : 10px;
+}
+.memory-title {
+    text-decoration: underline;
+    color: blue;
+    transition: all 500ms ease-in-out;
+    margin: 10px 0;
+    font-size: 14pt;
+}
+.memory-title:hover {
+    color: darkblue;
+    background: #ddd;
+    transition: all 500ms ease-in-out;
 }
 </style>
