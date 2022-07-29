@@ -3,10 +3,36 @@
 </template>
 
 <style>
+@import url('https://use.typekit.net/hvn1zfq.css');
+
 html {
   box-sizing: border-box;
   font-size: 10px;
   scroll-behavior: smooth;
+}
+
+.font_nassim {
+  font-family: nassim-latin, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font_nassim-italic {
+  font-family: nassim-latin, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font_nassim-bold {
+  font-family: nassim-latin, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font_nassim-bold-italic {
+  font-family: nassim-latin, sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 *,
@@ -32,6 +58,9 @@ figure,
 hr {
   margin: 0;
   padding: 0;
+  font-family: nassim-latin, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 ul {
