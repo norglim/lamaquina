@@ -1,5 +1,8 @@
 <template>
     <div>
+        <Title>
+            La máquina de los recuerdos
+        </Title>
         <Header/>
         <What />
         <hr>
