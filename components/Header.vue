@@ -2,7 +2,7 @@
         <header>
             <div class="wrapper">
                 <div class="logo-wrapper">
-                    <img src="/logo-header.svg" alt="Logo de la máquina de los recuerdos">
+                    <img src="/logo.png" alt="Logo de la máquina de los recuerdos">
                 </div>
                 <div class="text-wrapper">
                     <a href="/"><h1><strong>La máquina de los recuerdos</strong></h1></a>
@@ -23,16 +23,10 @@ header {
 h1 {
     line-height: 1;
 }
-.links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .links a {
     margin-right: 10px;
     color: inherit;
     text-decoration: underline;
-    margin-left: 5px;
 }
 .wrapper {
     padding: 20px 40px;
@@ -45,6 +39,14 @@ h1 {
         max-width: 920px;
         margin: 0 auto;
     }
+    .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .links a {
+        margin-left: 5px;
+    }
 }
 
 .logo-wrapper {
@@ -53,6 +55,7 @@ h1 {
 
 .logo-wrapper img {
     height: 65px;
+    width: 65px;
 }
 
 @media screen and (max-width: 580px) {
