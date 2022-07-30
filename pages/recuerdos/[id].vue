@@ -5,7 +5,6 @@
     </Title>
     <Header/>
     <section class="content-container">
-      <h2>{{memory.title}}</h2>
       <div v-html="html" class="content"></div>
     </section>
     <section class="up-button">

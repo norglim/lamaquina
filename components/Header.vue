@@ -7,6 +7,7 @@
                 <div class="text-wrapper">
                     <a href="/"><h1><strong>La máquina de los recuerdos</strong></h1></a>
                     <div class="links">
+                        <p>126 versiones posibles. Iteración 1.0. </p>
                         <a href="mailto:hola@lamaquina.xyz">contacto: hola@lamaquina.xyz</a>
                     </div>
                 </div>
@@ -31,6 +32,7 @@ h1 {
     margin-right: 10px;
     color: inherit;
     text-decoration: underline;
+    margin-left: 5px;
 }
 .wrapper {
     padding: 20px 40px;
@@ -56,13 +58,6 @@ h1 {
 @media screen and (max-width: 580px) {
     h1 {
         margin-top: 10px;
-    }
-    .wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .logo-wrapper img {
-        height: 40px;
     }
 }
 
